@@ -1,0 +1,18 @@
+---
+title: "week4"
+format: html
+---
+
+```{r}
+#| label: fig-penguins
+#| fig-cap: "Bill length vs bill depth of three species of penguins from the Palmer Station, Antarctica"
+
+library(palmerpenguins)
+library(ggplot2)
+
+ggplot(penguins, aes(x=bill_length_mm, y=bill_depth_mm, colour=species)) +
+  geom_point()
+```
+
+@fig-penguins shows that the three species of penguins have clusters of bill depths and bill lengths that largely do not overlap
+
